@@ -29,6 +29,26 @@ class FreeFinderTests: XCTestCase {
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
     
+    func test_refresh() throws{
+        // for both empty DB and not empty
+        // refresh is making all the annotations and putting them on map then for the list view it'll be for each annotation, make the UI list object
+        
+        // empty
+        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+            if let data = snapshot.value as? [String: Any]{
+                XCTAssertNil(data)
+            }
+        }){ (error) in print(error.localizedDescription)}
+        
+        // add items somehow
+        var annots //this is the list of annotations Charlie and William to make sure we can get this/fix syntax :))
+        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+            if let data = snapshot.value as? [String: Any]{
+                XCTAssertEqual(annots.count, data.count)
+            }
+        }){ (error) in print(error.localizedDescription)}
+    }
+    
     func test_comment() throws{
         // Boolean comment(String c) is our function def
         // no need to check item exists as comment is an item method, and by construction
