@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFE496DE29105E68000A7A95 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE496DD29105E68000A7A95 /* Tests_iOS.swift */; };
+		AFE496E029105E68000A7A95 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE496DF29105E68000A7A95 /* Tests_iOSLaunchTests.swift */; };
+		AFE496EA29105E68000A7A95 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE496E929105E68000A7A95 /* Tests_macOS.swift */; };
+		AFE496EC29105E68000A7A95 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE496EB29105E68000A7A95 /* Tests_macOSLaunchTests.swift */; };
+		AFE496ED29105E68000A7A95 /* FreeFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE496C529105E68000A7A95 /* FreeFinderApp.swift */; };
+		AFE496EE29105E68000A7A95 /* FreeFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE496C529105E68000A7A95 /* FreeFinderApp.swift */; };
+		AFE496EF29105E68000A7A95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE496C629105E68000A7A95 /* ContentView.swift */; };
+		AFE496F029105E68000A7A95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE496C629105E68000A7A95 /* ContentView.swift */; };
+		AFE496F129105E68000A7A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE496C729105E68000A7A95 /* Assets.xcassets */; };
+		AFE496F229105E68000A7A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE496C729105E68000A7A95 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFE496DA29105E68000A7A95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFE496C029105E67000A7A95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFE496CB29105E68000A7A95;
+			remoteInfo = "FreeFinder (iOS)";
+		};
+		AFE496E629105E68000A7A95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFE496C029105E67000A7A95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFE496D129105E68000A7A95;
+			remoteInfo = "FreeFinder (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AFE496C529105E68000A7A95 /* FreeFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFinderApp.swift; sourceTree = "<group>"; };
+		AFE496C629105E68000A7A95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AFE496C729105E68000A7A95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFE496CC29105E68000A7A95 /* FreeFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE496D229105E68000A7A95 /* FreeFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE496D429105E68000A7A95 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		AFE496D929105E68000A7A95 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE496DD29105E68000A7A95 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		AFE496DF29105E68000A7A95 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		AFE496E529105E68000A7A95 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE496E929105E68000A7A95 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		AFE496EB29105E68000A7A95 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFE496C929105E68000A7A95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE496CF29105E68000A7A95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE496D629105E68000A7A95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE496E229105E68000A7A95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFE496BF29105E67000A7A95 = {
+			isa = PBXGroup;
+			children = (
+				AFE496C429105E68000A7A95 /* Shared */,
+				AFE496D329105E68000A7A95 /* macOS */,
+				AFE496DC29105E68000A7A95 /* Tests iOS */,
+				AFE496E829105E68000A7A95 /* Tests macOS */,
+				AFE496CD29105E68000A7A95 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFE496C429105E68000A7A95 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				AFE496C529105E68000A7A95 /* FreeFinderApp.swift */,
+				AFE496C629105E68000A7A95 /* ContentView.swift */,
+				AFE496C729105E68000A7A95 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		AFE496CD29105E68000A7A95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFE496CC29105E68000A7A95 /* FreeFinder.app */,
+				AFE496D229105E68000A7A95 /* FreeFinder.app */,
+				AFE496D929105E68000A7A95 /* Tests iOS.xctest */,
+				AFE496E529105E68000A7A95 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFE496D329105E68000A7A95 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				AFE496D429105E68000A7A95 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		AFE496DC29105E68000A7A95 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AFE496DD29105E68000A7A95 /* Tests_iOS.swift */,
+				AFE496DF29105E68000A7A95 /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		AFE496E829105E68000A7A95 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				AFE496E929105E68000A7A95 /* Tests_macOS.swift */,
+				AFE496EB29105E68000A7A95 /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFE496CB29105E68000A7A95 /* FreeFinder (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFE496F529105E68000A7A95 /* Build configuration list for PBXNativeTarget "FreeFinder (iOS)" */;
+			buildPhases = (
+				AFE496C829105E68000A7A95 /* Sources */,
+				AFE496C929105E68000A7A95 /* Frameworks */,
+				AFE496CA29105E68000A7A95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FreeFinder (iOS)";
+			productName = "FreeFinder (iOS)";
+			productReference = AFE496CC29105E68000A7A95 /* FreeFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFE496D129105E68000A7A95 /* FreeFinder (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFE496F829105E68000A7A95 /* Build configuration list for PBXNativeTarget "FreeFinder (macOS)" */;
+			buildPhases = (
+				AFE496CE29105E68000A7A95 /* Sources */,
+				AFE496CF29105E68000A7A95 /* Frameworks */,
+				AFE496D029105E68000A7A95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FreeFinder (macOS)";
+			productName = "FreeFinder (macOS)";
+			productReference = AFE496D229105E68000A7A95 /* FreeFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFE496D829105E68000A7A95 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFE496FB29105E68000A7A95 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				AFE496D529105E68000A7A95 /* Sources */,
+				AFE496D629105E68000A7A95 /* Frameworks */,
+				AFE496D729105E68000A7A95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFE496DB29105E68000A7A95 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = AFE496D929105E68000A7A95 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		AFE496E429105E68000A7A95 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFE496FE29105E68000A7A95 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				AFE496E129105E68000A7A95 /* Sources */,
+				AFE496E229105E68000A7A95 /* Frameworks */,
+				AFE496E329105E68000A7A95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFE496E729105E68000A7A95 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = AFE496E529105E68000A7A95 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFE496C029105E67000A7A95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					AFE496CB29105E68000A7A95 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					AFE496D129105E68000A7A95 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					AFE496D829105E68000A7A95 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = AFE496CB29105E68000A7A95;
+					};
+					AFE496E429105E68000A7A95 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = AFE496D129105E68000A7A95;
+					};
+				};
+			};
+			buildConfigurationList = AFE496C329105E67000A7A95 /* Build configuration list for PBXProject "FreeFinder" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFE496BF29105E67000A7A95;
+			productRefGroup = AFE496CD29105E68000A7A95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFE496CB29105E68000A7A95 /* FreeFinder (iOS) */,
+				AFE496D129105E68000A7A95 /* FreeFinder (macOS) */,
+				AFE496D829105E68000A7A95 /* Tests iOS */,
+				AFE496E429105E68000A7A95 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFE496CA29105E68000A7A95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE496F129105E68000A7A95 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE496D029105E68000A7A95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE496F229105E68000A7A95 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE496D729105E68000A7A95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE496E329105E68000A7A95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFE496C829105E68000A7A95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE496EF29105E68000A7A95 /* ContentView.swift in Sources */,
+				AFE496ED29105E68000A7A95 /* FreeFinderApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE496CE29105E68000A7A95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE496F029105E68000A7A95 /* ContentView.swift in Sources */,
+				AFE496EE29105E68000A7A95 /* FreeFinderApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE496D529105E68000A7A95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE496E029105E68000A7A95 /* Tests_iOSLaunchTests.swift in Sources */,
+				AFE496DE29105E68000A7A95 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE496E129105E68000A7A95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE496EC29105E68000A7A95 /* Tests_macOSLaunchTests.swift in Sources */,
+				AFE496EA29105E68000A7A95 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFE496DB29105E68000A7A95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFE496CB29105E68000A7A95 /* FreeFinder (iOS) */;
+			targetProxy = AFE496DA29105E68000A7A95 /* PBXContainerItemProxy */;
+		};
+		AFE496E729105E68000A7A95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFE496D129105E68000A7A95 /* FreeFinder (macOS) */;
+			targetProxy = AFE496E629105E68000A7A95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AFE496F329105E68000A7A95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFE496F429105E68000A7A95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AFE496F629105E68000A7A95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = UChicago.FreeFinder;
+				PRODUCT_NAME = FreeFinder;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFE496F729105E68000A7A95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = UChicago.FreeFinder;
+				PRODUCT_NAME = FreeFinder;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFE496F929105E68000A7A95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = UChicago.FreeFinder;
+				PRODUCT_NAME = FreeFinder;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AFE496FA29105E68000A7A95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = UChicago.FreeFinder;
+				PRODUCT_NAME = FreeFinder;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AFE496FC29105E68000A7A95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "UChicago.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FreeFinder (iOS)";
+			};
+			name = Debug;
+		};
+		AFE496FD29105E68000A7A95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "UChicago.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FreeFinder (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFE496FF29105E68000A7A95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "UChicago.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "FreeFinder (macOS)";
+			};
+			name = Debug;
+		};
+		AFE4970029105E68000A7A95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "UChicago.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "FreeFinder (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFE496C329105E67000A7A95 /* Build configuration list for PBXProject "FreeFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE496F329105E68000A7A95 /* Debug */,
+				AFE496F429105E68000A7A95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFE496F529105E68000A7A95 /* Build configuration list for PBXNativeTarget "FreeFinder (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE496F629105E68000A7A95 /* Debug */,
+				AFE496F729105E68000A7A95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFE496F829105E68000A7A95 /* Build configuration list for PBXNativeTarget "FreeFinder (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE496F929105E68000A7A95 /* Debug */,
+				AFE496FA29105E68000A7A95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFE496FB29105E68000A7A95 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE496FC29105E68000A7A95 /* Debug */,
+				AFE496FD29105E68000A7A95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFE496FE29105E68000A7A95 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE496FF29105E68000A7A95 /* Debug */,
+				AFE4970029105E68000A7A95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFE496C029105E67000A7A95 /* Project object */;
+}
