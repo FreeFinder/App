@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF2FEB7A291060100060BB91 /* FreeFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FEB79291060100060BB91 /* FreeFinderTests.swift */; };
 		AFE496DE29105E68000A7A95 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE496DD29105E68000A7A95 /* Tests_iOS.swift */; };
 		AFE496E029105E68000A7A95 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE496DF29105E68000A7A95 /* Tests_iOSLaunchTests.swift */; };
 		AFE496EA29105E68000A7A95 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE496E929105E68000A7A95 /* Tests_macOS.swift */; };
@@ -20,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AF2FEB7B291060100060BB91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFE496C029105E67000A7A95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFE496D129105E68000A7A95;
+			remoteInfo = "FreeFinder (macOS)";
+		};
 		AFE496DA29105E68000A7A95 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AFE496C029105E67000A7A95 /* Project object */;
@@ -37,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF2FEB77291060100060BB91 /* FreeFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2FEB79291060100060BB91 /* FreeFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFinderTests.swift; sourceTree = "<group>"; };
 		AFE496C529105E68000A7A95 /* FreeFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFinderApp.swift; sourceTree = "<group>"; };
 		AFE496C629105E68000A7A95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AFE496C729105E68000A7A95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +62,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AF2FEB74291060100060BB91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AFE496C929105E68000A7A95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF2FEB78291060100060BB91 /* FreeFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF2FEB79291060100060BB91 /* FreeFinderTests.swift */,
+			);
+			path = FreeFinderTests;
+			sourceTree = "<group>";
+		};
 		AFE496BF29105E67000A7A95 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +115,7 @@
 				AFE496D329105E68000A7A95 /* macOS */,
 				AFE496DC29105E68000A7A95 /* Tests iOS */,
 				AFE496E829105E68000A7A95 /* Tests macOS */,
+				AF2FEB78291060100060BB91 /* FreeFinderTests */,
 				AFE496CD29105E68000A7A95 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,6 +137,7 @@
 				AFE496D229105E68000A7A95 /* FreeFinder.app */,
 				AFE496D929105E68000A7A95 /* Tests iOS.xctest */,
 				AFE496E529105E68000A7A95 /* Tests macOS.xctest */,
+				AF2FEB77291060100060BB91 /* FreeFinderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +171,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AF2FEB76291060100060BB91 /* FreeFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF2FEB7F291060100060BB91 /* Build configuration list for PBXNativeTarget "FreeFinderTests" */;
+			buildPhases = (
+				AF2FEB73291060100060BB91 /* Sources */,
+				AF2FEB74291060100060BB91 /* Frameworks */,
+				AF2FEB75291060100060BB91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF2FEB7C291060100060BB91 /* PBXTargetDependency */,
+			);
+			name = FreeFinderTests;
+			productName = FreeFinderTests;
+			productReference = AF2FEB77291060100060BB91 /* FreeFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		AFE496CB29105E68000A7A95 /* FreeFinder (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFE496F529105E68000A7A95 /* Build configuration list for PBXNativeTarget "FreeFinder (iOS)" */;
@@ -224,6 +269,10 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					AF2FEB76291060100060BB91 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = AFE496D129105E68000A7A95;
+					};
 					AFE496CB29105E68000A7A95 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -257,11 +306,19 @@
 				AFE496D129105E68000A7A95 /* FreeFinder (macOS) */,
 				AFE496D829105E68000A7A95 /* Tests iOS */,
 				AFE496E429105E68000A7A95 /* Tests macOS */,
+				AF2FEB76291060100060BB91 /* FreeFinderTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AF2FEB75291060100060BB91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AFE496CA29105E68000A7A95 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,6 +352,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AF2FEB73291060100060BB91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2FEB7A291060100060BB91 /* FreeFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AFE496C829105E68000A7A95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -334,6 +399,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AF2FEB7C291060100060BB91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFE496D129105E68000A7A95 /* FreeFinder (macOS) */;
+			targetProxy = AF2FEB7B291060100060BB91 /* PBXContainerItemProxy */;
+		};
 		AFE496DB29105E68000A7A95 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AFE496CB29105E68000A7A95 /* FreeFinder (iOS) */;
@@ -347,6 +417,42 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		AF2FEB7D291060100060BB91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = UChicago.FreeFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeFinder.app/Contents/MacOS/FreeFinder";
+			};
+			name = Debug;
+		};
+		AF2FEB7E291060100060BB91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = UChicago.FreeFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeFinder.app/Contents/MacOS/FreeFinder";
+			};
+			name = Release;
+		};
 		AFE496F329105E68000A7A95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -645,6 +751,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AF2FEB7F291060100060BB91 /* Build configuration list for PBXNativeTarget "FreeFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF2FEB7D291060100060BB91 /* Debug */,
+				AF2FEB7E291060100060BB91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AFE496C329105E67000A7A95 /* Build configuration list for PBXProject "FreeFinder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
