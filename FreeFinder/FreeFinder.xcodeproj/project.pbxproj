@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4859A0D22911DBE900C2D1DB /* Tests_GoogleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859A0D12911DBE900C2D1DB /* Tests_GoogleAuth.swift */; };
 		AF2FEB7A291060100060BB91 /* FreeFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FEB79291060100060BB91 /* FreeFinderTests.swift */; };
 		AF2FEB8129106F580060BB91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF2FEB8029106F580060BB91 /* GoogleService-Info.plist */; };
 		AF2FEB8229106F580060BB91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF2FEB8029106F580060BB91 /* GoogleService-Info.plist */; };
@@ -31,6 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4859A0D32911DBE900C2D1DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFE496C029105E67000A7A95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFE496CB29105E68000A7A95;
+			remoteInfo = "FreeFinder (iOS)";
+		};
 		AF2FEB7B291060100060BB91 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AFE496C029105E67000A7A95 /* Project object */;
@@ -55,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4859A0CF2911DBE900C2D1DB /* Tests GoogleAuth.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests GoogleAuth.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4859A0D12911DBE900C2D1DB /* Tests_GoogleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_GoogleAuth.swift; sourceTree = "<group>"; };
 		AF2FEB77291060100060BB91 /* FreeFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF2FEB79291060100060BB91 /* FreeFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFinderTests.swift; sourceTree = "<group>"; };
 		AF2FEB8029106F580060BB91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -73,6 +83,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4859A0CC2911DBE900C2D1DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AF2FEB74291060100060BB91 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -116,6 +133,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4859A0D02911DBE900C2D1DB /* Tests GoogleAuth */ = {
+			isa = PBXGroup;
+			children = (
+				4859A0D12911DBE900C2D1DB /* Tests_GoogleAuth.swift */,
+			);
+			path = "Tests GoogleAuth";
+			sourceTree = "<group>";
+		};
 		AF2FEB78291060100060BB91 /* FreeFinderTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +158,7 @@
 				AFE496DC29105E68000A7A95 /* Tests iOS */,
 				AFE496E829105E68000A7A95 /* Tests macOS */,
 				AF2FEB78291060100060BB91 /* FreeFinderTests */,
+				4859A0D02911DBE900C2D1DB /* Tests GoogleAuth */,
 				AFE496CD29105E68000A7A95 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -155,6 +181,7 @@
 				AFE496D929105E68000A7A95 /* Tests iOS.xctest */,
 				AFE496E529105E68000A7A95 /* Tests macOS.xctest */,
 				AF2FEB77291060100060BB91 /* FreeFinderTests.xctest */,
+				4859A0CF2911DBE900C2D1DB /* Tests GoogleAuth.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,6 +215,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4859A0CE2911DBE900C2D1DB /* Tests GoogleAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4859A0D72911DBE900C2D1DB /* Build configuration list for PBXNativeTarget "Tests GoogleAuth" */;
+			buildPhases = (
+				4859A0CB2911DBE900C2D1DB /* Sources */,
+				4859A0CC2911DBE900C2D1DB /* Frameworks */,
+				4859A0CD2911DBE900C2D1DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4859A0D42911DBE900C2D1DB /* PBXTargetDependency */,
+			);
+			name = "Tests GoogleAuth";
+			productName = "Tests GoogleAuth";
+			productReference = 4859A0CF2911DBE900C2D1DB /* Tests GoogleAuth.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		AF2FEB76291060100060BB91 /* FreeFinderTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF2FEB7F291060100060BB91 /* Build configuration list for PBXNativeTarget "FreeFinderTests" */;
@@ -290,9 +335,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					4859A0CE2911DBE900C2D1DB = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = AFE496CB29105E68000A7A95;
+					};
 					AF2FEB76291060100060BB91 = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = AFE496D129105E68000A7A95;
@@ -335,11 +384,19 @@
 				AFE496D829105E68000A7A95 /* Tests iOS */,
 				AFE496E429105E68000A7A95 /* Tests macOS */,
 				AF2FEB76291060100060BB91 /* FreeFinderTests */,
+				4859A0CE2911DBE900C2D1DB /* Tests GoogleAuth */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4859A0CD2911DBE900C2D1DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AF2FEB75291060100060BB91 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -385,6 +442,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4859A0CB2911DBE900C2D1DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4859A0D22911DBE900C2D1DB /* Tests_GoogleAuth.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AF2FEB73291060100060BB91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -432,6 +497,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4859A0D42911DBE900C2D1DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFE496CB29105E68000A7A95 /* FreeFinder (iOS) */;
+			targetProxy = 4859A0D32911DBE900C2D1DB /* PBXContainerItemProxy */;
+		};
 		AF2FEB7C291060100060BB91 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AFE496D129105E68000A7A95 /* FreeFinder (macOS) */;
@@ -450,6 +520,52 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		4859A0D52911DBE900C2D1DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KAP5HAAY49;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tests-GoogleAuth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeFinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FreeFinder";
+			};
+			name = Debug;
+		};
+		4859A0D62911DBE900C2D1DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KAP5HAAY49;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tests-GoogleAuth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeFinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FreeFinder";
+			};
+			name = Release;
+		};
 		AF2FEB7D291060100060BB91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -792,6 +908,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4859A0D72911DBE900C2D1DB /* Build configuration list for PBXNativeTarget "Tests GoogleAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4859A0D52911DBE900C2D1DB /* Debug */,
+				4859A0D62911DBE900C2D1DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AF2FEB7F291060100060BB91 /* Build configuration list for PBXNativeTarget "FreeFinderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
