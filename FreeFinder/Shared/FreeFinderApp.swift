@@ -16,6 +16,10 @@ func item_to_annot(item_id: String){
     
 }
 
+func sign_in(){
+    
+}
+
 class User {
     var id : String
     var email : String
@@ -34,7 +38,9 @@ class User {
     func delete_item(item_id: String){
         
     }
-    
+    func sign_out(){
+        
+    }
     
 }
 
