@@ -1,13 +1,13 @@
 //
-//  GoogleTests.swift
-//  GoogleTests
+//  MapKitTests.swift
+//  MapKitTests
 //
-//  Created by William Zeng on 10/31/22.
+//  Created by Charlie Gravitt on 10/31/22.
 //
 
 import XCTest
 
-final class GoogleTests: XCTestCase {
+final class MapKitTests: XCTestCase {
     var ref: DatabaseReference!
     ref = FIRDatabase.database().reference().child("items").child("id")
 
@@ -27,25 +27,20 @@ final class GoogleTests: XCTestCase {
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
 
-    func testCreateUser() throws{
-        //will create two users, one with valid email one without.
-        //Note that a user has two fields: ID and email.
+    func testItemToAnnot() throws{
+        //Transforms an Item into a GEOJson then into an annotation that can be placed on the map
+        var item_valid_id = user.create_item(
+            title: "test_title",
+            subtitle: "test sub",
+            description: "desc_1",
+            photo: [[1,2], [1,2]],
+            quanitity: 2,
+            coordinate: CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0)
+        )
+        let pulled_annot = ItemToAnnot(item_valid_id)
+        XCTAssertEqual(pulled_annot.title, "test_title", "Wrong title")
+        XCTAssertEqual(pulled_annot.subtitle, "test sub", "Wrong subtitle")
 
-        //valid user will exist in the databse
-        let goodUser = create_user("cbgravitt@uchicago.edu")
-        ref.child("users/id/\(goodUser.id)").getData(completion: {error, snapshot in guard error == nil else {
-            print(error!.localizedDescription)
-            return;
-        }
-            //check that we found the proper ID, meaning it was stored
-            let id = snapshot.value as? String ?? "Unknown";
-            XCTAssertEqual(id, goodUser.id, "Wrong ID found");
-        })
-
-        //A user with an invalid email should have the initializer return nil
-        let badUser = create_user("cbgravitt@gmail.com")
-        XCTAssertNil(badUser, "User erroneously created");
-        
     }
 
     func testPerformanceExample() throws {
