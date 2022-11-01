@@ -7,10 +7,11 @@
 // trying for my life out here
 
 import XCTest
+import Firebase
 
 class FreeFinderTests: XCTestCase {
     var ref: DatabaseReference!
-    ref = FIRDatabase.database().reference().child("items").child("id")
+    ref = Database.database(url: "https://freefinder-12f0c-default-rtdb.firebaseio.com/").reference().child("items")
     
     
     override func setUpWithError() throws {

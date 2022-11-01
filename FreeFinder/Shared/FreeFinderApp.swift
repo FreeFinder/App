@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Firebase
+import FirebaseCore
 
 func refresh(){
     
@@ -46,8 +47,10 @@ class User {
 
 @main
 struct FreeFinderApp: App {
-    
+    //var ref: DatabaseReference!
+    //ref = Database.database(url: "https://freefinder-12f0c-default-rtdb.firebaseio.com/").reference()
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     
     var body: some Scene {
         WindowGroup {
