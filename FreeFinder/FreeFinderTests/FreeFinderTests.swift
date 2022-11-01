@@ -52,10 +52,7 @@ class FreeFinderTests: XCTestCase {
         }){ (error) in print(error.localizedDescription)}
     }
     
-    func test_comment() throws{
-        // Boolean comment(String c) is our function def
-        // no need to check item exists as comment is an item method, and by construction
-        
+    func test_comment() throws{        
         //get initial state of db
         ref.child(item1).observeSingleEvent(of: .value, with: { (snapshot) in
             if let data = snapshot.value as? [String: Any]{

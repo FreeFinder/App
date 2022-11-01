@@ -32,8 +32,8 @@ class User {
     func create_item(){
         
     }
-    func comment(item_id: String, comment: String){
-    
+    func comment(item_id: String, comment: String)-> Bool{
+        return false
     }
     func delete_item(item_id: String){
         
