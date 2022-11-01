@@ -14,7 +14,9 @@ class FreeFinderTests: XCTestCase {
     
     
     override func setUpWithError() throws {
-        var item1
+        var test_user = User("test1", "jlabuda@uchicago.edu") //need user to test respective functions
+        var item1 = "testitemid1" //will be id of test data already in DB
+        var item2 = "testitemid2" // id of item not in DB
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
@@ -54,15 +56,15 @@ class FreeFinderTests: XCTestCase {
         // Boolean comment(String c) is our function def
         // no need to check item exists as comment is an item method, and by construction
         
-        //get initial state of
-        ref.child(item1.id).observeSingleEvent(of: .value, with: { (snapshot) in
+        //get initial state of db
+        ref.child(item1).observeSingleEvent(of: .value, with: { (snapshot) in
             if let data = snapshot.value as? [String: Any]{
                 let firstComments = data["comments"]
             }
         }){ (error) in print(error.localizedDescription)}
         
         // fail on empty comment with no previous comments
-        XCTAssertFalse(item1.comment(""))
+        XCTAssertFalse(test_user.comment(item1,""))
         ref.observeSingleEvent(of: .value, with: { (snapshot) in
             if let data = snapshot.value as? [String: Any]{
                 XCTAssertEqual(firstComments, data["comments"])
@@ -70,30 +72,34 @@ class FreeFinderTests: XCTestCase {
         }){ (error) in print(error.localizedDescription)}
         
         // pass on good comment w/ no prior comments
-        XCTAssertTrue(item1.comment("Hi"))
+        XCTAssertTrue(test_user.comment(item1,"Hi"))
         firstComments.append("Hi")
-        ref.child(item1.id).observeSingleEvent(of: .value, with: { (snapshot) in
+        ref.child(item1).observeSingleEvent(of: .value, with: { (snapshot) in
             if let data = snapshot.value as? [String: Any]{
                 XCTAssertEqual(firstComments, data["comments"])
             }
         }){ (error) in print(error.localizedDescription)}
         
         // pass on good comment w/ prior comments
-        XCTAssertTrue(item1.comment("Hi2"))
+        XCTAssertTrue(test_user.comment(item1,"Hi2"))
         firstComments.append("Hi2")
-        ref.child(item1.id).observeSingleEvent(of: .value, with: { (snapshot) in
+        ref.child(item1).observeSingleEvent(of: .value, with: { (snapshot) in
             if let data = snapshot.value as? [String: Any]{
                 XCTAssertEqual(firstComments, data["comments"])
             }
         }){ (error) in print(error.localizedDescription)}
         
         // fail on empty comment with prior comments
-        XCTAssertFalse(item1.comment(""))
+        XCTAssertFalse(test_user.comment(item1, ""))
         ref.observeSingleEvent(of: .value, with: { (snapshot) in
             if let data = snapshot.value as? [String: Any]{
                 XCTAssertEqual(firstComments, data["comments"])
             }
         }){ (error) in print(error.localizedDescription)}
+        
+        // fail on comment on invalid item
+        XCTAssertFalse(test_user.comment(item2, "hi"))
+        
     }
     
     
