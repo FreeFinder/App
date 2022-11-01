@@ -15,8 +15,8 @@ class FreeFinderTests: XCTestCase {
     
     
     override func setUpWithError() throws {
-        var test_user = User("test1", "jlabuda@uchicago.edu") //need user to test respective functions
-        var item1 = "testitemid1" //will be id of test data already in DB
+        var test_user = User("user1id", "jlabuda@uchicago.edu") //need user instance to test respective functions
+        var item1 = "itemid1" //will be id of test data already in DB
         var item2 = "testitemid2" // id of item not in DB
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -34,23 +34,7 @@ class FreeFinderTests: XCTestCase {
     }
     
     func test_refresh() throws{
-        // for both empty DB and not empty
-        // refresh is making all the annotations and putting them on map then for the list view it'll be for each annotation, make the UI list object
-        
-        // empty
-        ref.observeSingleEvent(of: .value, with: { (snapshot) in
-            if let data = snapshot.value as? [String: Any]{
-                XCTAssertNil(data)
-            }
-        }){ (error) in print(error.localizedDescription)}
-        
-        // add items somehow
-        var annots //this is the list of annotations Charlie and William to make sure we can get this/fix syntax :))
-        ref.observeSingleEvent(of: .value, with: { (snapshot) in
-            if let data = snapshot.value as? [String: Any]{
-                XCTAssertEqual(annots.count, data.count)
-            }
-        }){ (error) in print(error.localizedDescription)}
+
     }
     
     func test_comment() throws{        
@@ -61,15 +45,15 @@ class FreeFinderTests: XCTestCase {
             }
         }){ (error) in print(error.localizedDescription)}
         
-        // fail on empty comment with no previous comments
+        // false: empty comment with no previous comments
         XCTAssertFalse(test_user.comment(item1,""))
-        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+        ref.child(item1).observeSingleEvent(of: .value, with: { (snapshot) in
             if let data = snapshot.value as? [String: Any]{
                 XCTAssertEqual(firstComments, data["comments"])
             }
         }){ (error) in print(error.localizedDescription)}
         
-        // pass on good comment w/ no prior comments
+        // true: good comment w/ no prior comments
         XCTAssertTrue(test_user.comment(item1,"Hi"))
         firstComments.append("Hi")
         ref.child(item1).observeSingleEvent(of: .value, with: { (snapshot) in
@@ -78,7 +62,7 @@ class FreeFinderTests: XCTestCase {
             }
         }){ (error) in print(error.localizedDescription)}
         
-        // pass on good comment w/ prior comments
+        // true: good comment w/ prior comments
         XCTAssertTrue(test_user.comment(item1,"Hi2"))
         firstComments.append("Hi2")
         ref.child(item1).observeSingleEvent(of: .value, with: { (snapshot) in
@@ -87,15 +71,15 @@ class FreeFinderTests: XCTestCase {
             }
         }){ (error) in print(error.localizedDescription)}
         
-        // fail on empty comment with prior comments
+        // false: empty comment with prior comments
         XCTAssertFalse(test_user.comment(item1, ""))
-        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+        ref.child(item1).observeSingleEvent(of: .value, with: { (snapshot) in
             if let data = snapshot.value as? [String: Any]{
                 XCTAssertEqual(firstComments, data["comments"])
             }
         }){ (error) in print(error.localizedDescription)}
         
-        // fail on comment on invalid item
+        // false: comment on invalid item
         XCTAssertFalse(test_user.comment(item2, "hi"))
         
     }
