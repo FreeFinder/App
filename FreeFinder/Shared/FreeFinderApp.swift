@@ -8,6 +8,36 @@
 import SwiftUI
 import Firebase
 
+func refresh(){
+    
+}
+
+func item_to_annot(item_id: String){
+    
+}
+
+class User {
+    var id : String
+    var email : String
+    
+    init(id: String, email: String){
+        self.id = id
+        self.email = email
+    }
+    
+    func create_item(){
+        
+    }
+    func comment(item_id: String, comment: String){
+    
+    }
+    func delete_item(item_id: String){
+        
+    }
+    
+    
+}
+
 @main
 struct FreeFinderApp: App {
     
