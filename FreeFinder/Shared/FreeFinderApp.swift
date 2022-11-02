@@ -4,7 +4,6 @@
 //
 //  Created by Jordan Labuda on 10/31/22.
 //
-
 import SwiftUI
 import Firebase
 import FirebaseCore
@@ -66,3 +65,5 @@ class AppDelegate: NSObject, UIApplicationDelegate{
             return true
     }
 }
+
+
