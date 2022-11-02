@@ -37,6 +37,18 @@ final class MapKitTests: XCTestCase {
         // Checks if map is loaded in the test view
         XCTAssertNotNil(viewControllerUnderTest.mapView, "There is no Map View in unit test")
     }
+    func isMapReloaded() {
+        // Checks if map is loaded in the test view
+        // Functino to reload the map
+        reloadMap()
+        
+        // Asserts that the map is loaded and ready to go
+        XCTAssertNotNil(viewControllerUnderTest.mapView, "There is no Map View in unit test")
+        
+        // Checks for the annotations on the map and if its greater than 0.
+        let annotationsOnMap = self.viewControllerUnderTest.mapView.annotations
+        XCTAssertGreaterThan(annotationsOnMap.count, 0)
+    }
     
     func isMapViewProper() {
         // Checks if the view controller is aligned with apple mapkit protocol
