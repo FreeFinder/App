@@ -26,11 +26,6 @@ final class MapViewTests: XCTestCase {
         let mockId = annotClick();
         XCTAssertEqual(mockId, '12345');
         
-        // what if database getter fails
-        
-        // valid payload
-        // invalid payload
-        
     }
 
     func testPerformanceExample() throws {
