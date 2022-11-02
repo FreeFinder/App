@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4859A0D22911DBE900C2D1DB /* Tests_GoogleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859A0D12911DBE900C2D1DB /* Tests_GoogleAuth.swift */; };
+		48C01B19291226AA008F219E /* Tests_MapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C01B18291226AA008F219E /* Tests_MapKit.swift */; };
 		7365FAD92911FD86000C4424 /* CreateItemViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7365FAD82911FD86000C4424 /* CreateItemViewTests.swift */; };
 		7365FADD2911FDD6000C4424 /* MapViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7365FADA2911FDD5000C4424 /* MapViewTests.swift */; };
 		7365FADE2911FDD6000C4424 /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7365FADB2911FDD6000C4424 /* ItemTests.swift */; };
@@ -50,6 +51,13 @@
 			remoteGlobalIDString = AFE496CB29105E68000A7A95;
 			remoteInfo = "FreeFinder (iOS)";
 		};
+		48C01B1A291226AA008F219E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFE496C029105E67000A7A95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFE496CB29105E68000A7A95;
+			remoteInfo = "FreeFinder (iOS)";
+		};
 		AF2FEB7B291060100060BB91 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AFE496C029105E67000A7A95 /* Project object */;
@@ -76,6 +84,8 @@
 /* Begin PBXFileReference section */
 		4859A0CF2911DBE900C2D1DB /* Tests GoogleAuth.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests GoogleAuth.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4859A0D12911DBE900C2D1DB /* Tests_GoogleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_GoogleAuth.swift; sourceTree = "<group>"; };
+		48C01B16291226AA008F219E /* Tests MapKit.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests MapKit.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48C01B18291226AA008F219E /* Tests_MapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_MapKit.swift; sourceTree = "<group>"; };
 		7365FAD82911FD86000C4424 /* CreateItemViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateItemViewTests.swift; sourceTree = "<group>"; };
 		7365FADA2911FDD5000C4424 /* MapViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewTests.swift; sourceTree = "<group>"; };
 		7365FADB2911FDD6000C4424 /* ItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
@@ -105,6 +115,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		4859A0CC2911DBE900C2D1DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48C01B13291226AA008F219E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -162,6 +179,14 @@
 			path = "Tests GoogleAuth";
 			sourceTree = "<group>";
 		};
+		48C01B17291226AA008F219E /* Tests MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				48C01B18291226AA008F219E /* Tests_MapKit.swift */,
+			);
+			path = "Tests MapKit";
+			sourceTree = "<group>";
+		};
 		7365FAF829120DBE000C4424 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +217,7 @@
 				AFE496E829105E68000A7A95 /* Tests macOS */,
 				AF2FEB78291060100060BB91 /* FreeFinderTests */,
 				4859A0D02911DBE900C2D1DB /* Tests GoogleAuth */,
+				48C01B17291226AA008F219E /* Tests MapKit */,
 				AFE496CD29105E68000A7A95 /* Products */,
 				7365FAF829120DBE000C4424 /* Frameworks */,
 			);
@@ -221,6 +247,7 @@
 				AFE496E529105E68000A7A95 /* Tests macOS.xctest */,
 				AF2FEB77291060100060BB91 /* FreeFinderTests.xctest */,
 				4859A0CF2911DBE900C2D1DB /* Tests GoogleAuth.xctest */,
+				48C01B16291226AA008F219E /* Tests MapKit.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -270,6 +297,24 @@
 			name = "Tests GoogleAuth";
 			productName = "Tests GoogleAuth";
 			productReference = 4859A0CF2911DBE900C2D1DB /* Tests GoogleAuth.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		48C01B15291226AA008F219E /* Tests MapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48C01B1E291226AA008F219E /* Build configuration list for PBXNativeTarget "Tests MapKit" */;
+			buildPhases = (
+				48C01B12291226AA008F219E /* Sources */,
+				48C01B13291226AA008F219E /* Frameworks */,
+				48C01B14291226AA008F219E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48C01B1B291226AA008F219E /* PBXTargetDependency */,
+			);
+			name = "Tests MapKit";
+			productName = "Tests MapKit";
+			productReference = 48C01B16291226AA008F219E /* Tests MapKit.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		AF2FEB76291060100060BB91 /* FreeFinderTests */ = {
@@ -381,6 +426,10 @@
 						CreatedOnToolsVersion = 14.0.1;
 						TestTargetID = AFE496CB29105E68000A7A95;
 					};
+					48C01B15291226AA008F219E = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = AFE496CB29105E68000A7A95;
+					};
 					AF2FEB76291060100060BB91 = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = AFE496D129105E68000A7A95;
@@ -424,6 +473,7 @@
 				AFE496E429105E68000A7A95 /* Tests macOS */,
 				AF2FEB76291060100060BB91 /* FreeFinderTests */,
 				4859A0CE2911DBE900C2D1DB /* Tests GoogleAuth */,
+				48C01B15291226AA008F219E /* Tests MapKit */,
 			);
 		};
 /* End PBXProject section */
@@ -434,6 +484,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7365FAFF29120ED3000C4424 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48C01B14291226AA008F219E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +544,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4859A0D22911DBE900C2D1DB /* Tests_GoogleAuth.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48C01B12291226AA008F219E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48C01B19291226AA008F219E /* Tests_MapKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +617,11 @@
 			target = AFE496CB29105E68000A7A95 /* FreeFinder (iOS) */;
 			targetProxy = 4859A0D32911DBE900C2D1DB /* PBXContainerItemProxy */;
 		};
+		48C01B1B291226AA008F219E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFE496CB29105E68000A7A95 /* FreeFinder (iOS) */;
+			targetProxy = 48C01B1A291226AA008F219E /* PBXContainerItemProxy */;
+		};
 		AF2FEB7C291060100060BB91 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AFE496D129105E68000A7A95 /* FreeFinder (macOS) */;
@@ -606,6 +676,52 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Tests-GoogleAuth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeFinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FreeFinder";
+			};
+			name = Release;
+		};
+		48C01B1C291226AA008F219E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KAP5HAAY49;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tests-MapKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeFinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FreeFinder";
+			};
+			name = Debug;
+		};
+		48C01B1D291226AA008F219E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KAP5HAAY49;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tests-MapKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -963,6 +1079,15 @@
 			buildConfigurations = (
 				4859A0D52911DBE900C2D1DB /* Debug */,
 				4859A0D62911DBE900C2D1DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48C01B1E291226AA008F219E /* Build configuration list for PBXNativeTarget "Tests MapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48C01B1C291226AA008F219E /* Debug */,
+				48C01B1D291226AA008F219E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
