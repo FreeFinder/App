@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		4859A0D22911DBE900C2D1DB /* Tests_GoogleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859A0D12911DBE900C2D1DB /* Tests_GoogleAuth.swift */; };
+		7365FAD92911FD86000C4424 /* CreateItemViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7365FAD82911FD86000C4424 /* CreateItemViewTests.swift */; };
+		7365FADD2911FDD6000C4424 /* MapViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7365FADA2911FDD5000C4424 /* MapViewTests.swift */; };
+		7365FADE2911FDD6000C4424 /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7365FADB2911FDD6000C4424 /* ItemTests.swift */; };
+		7365FADF2911FDD6000C4424 /* ListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7365FADC2911FDD6000C4424 /* ListViewTests.swift */; };
+		7365FAE12911FE51000C4424 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7365FAE02911FE51000C4424 /* MapView.swift */; };
+		7365FAE32911FEB8000C4424 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7365FAE22911FEB8000C4424 /* ListView.swift */; };
+		7365FAE52911FED2000C4424 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7365FAE42911FED2000C4424 /* ItemView.swift */; };
+		7365FAE7291202A1000C4424 /* CreateItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7365FAE6291202A1000C4424 /* CreateItemView.swift */; };
+		7365FAE929120374000C4424 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7365FAE829120374000C4424 /* ProfileView.swift */; };
+		7365FAEB2912039D000C4424 /* ProfileViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7365FAEA2912039D000C4424 /* ProfileViewTests.swift */; };
+		7365FAFA29120ED3000C4424 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7365FAF929120ED3000C4424 /* GoogleService-Info.plist */; };
+		7365FAFB29120ED3000C4424 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7365FAF929120ED3000C4424 /* GoogleService-Info.plist */; };
+		7365FAFC29120ED3000C4424 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7365FAF929120ED3000C4424 /* GoogleService-Info.plist */; };
+		7365FAFD29120ED3000C4424 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7365FAF929120ED3000C4424 /* GoogleService-Info.plist */; };
+		7365FAFE29120ED3000C4424 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7365FAF929120ED3000C4424 /* GoogleService-Info.plist */; };
+		7365FAFF29120ED3000C4424 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7365FAF929120ED3000C4424 /* GoogleService-Info.plist */; };
 		AF2FEB7A291060100060BB91 /* FreeFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FEB79291060100060BB91 /* FreeFinderTests.swift */; };
-		AF2FEB8129106F580060BB91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF2FEB8029106F580060BB91 /* GoogleService-Info.plist */; };
-		AF2FEB8229106F580060BB91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF2FEB8029106F580060BB91 /* GoogleService-Info.plist */; };
-		AF2FEB8329106F580060BB91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF2FEB8029106F580060BB91 /* GoogleService-Info.plist */; };
-		AF2FEB8429106F580060BB91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF2FEB8029106F580060BB91 /* GoogleService-Info.plist */; };
-		AF2FEB8529106F580060BB91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF2FEB8029106F580060BB91 /* GoogleService-Info.plist */; };
 		AF2FEB8829106FF80060BB91 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = AF2FEB8729106FF80060BB91 /* FirebaseAnalytics */; };
 		AF2FEB8A29106FF80060BB91 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = AF2FEB8929106FF80060BB91 /* FirebaseDatabase */; };
 		AF2FEB8C29106FF80060BB91 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF2FEB8B29106FF80060BB91 /* FirebaseDatabaseSwift */; };
@@ -65,9 +76,19 @@
 /* Begin PBXFileReference section */
 		4859A0CF2911DBE900C2D1DB /* Tests GoogleAuth.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests GoogleAuth.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4859A0D12911DBE900C2D1DB /* Tests_GoogleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_GoogleAuth.swift; sourceTree = "<group>"; };
+		7365FAD82911FD86000C4424 /* CreateItemViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateItemViewTests.swift; sourceTree = "<group>"; };
+		7365FADA2911FDD5000C4424 /* MapViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewTests.swift; sourceTree = "<group>"; };
+		7365FADB2911FDD6000C4424 /* ItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
+		7365FADC2911FDD6000C4424 /* ListViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewTests.swift; sourceTree = "<group>"; };
+		7365FAE02911FE51000C4424 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		7365FAE22911FEB8000C4424 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		7365FAE42911FED2000C4424 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		7365FAE6291202A1000C4424 /* CreateItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateItemView.swift; sourceTree = "<group>"; };
+		7365FAE829120374000C4424 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7365FAEA2912039D000C4424 /* ProfileViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewTests.swift; sourceTree = "<group>"; };
+		7365FAF929120ED3000C4424 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF2FEB77291060100060BB91 /* FreeFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF2FEB79291060100060BB91 /* FreeFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFinderTests.swift; sourceTree = "<group>"; };
-		AF2FEB8029106F580060BB91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AFE496C529105E68000A7A95 /* FreeFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFinderApp.swift; sourceTree = "<group>"; };
 		AFE496C629105E68000A7A95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AFE496C729105E68000A7A95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -141,10 +162,22 @@
 			path = "Tests GoogleAuth";
 			sourceTree = "<group>";
 		};
+		7365FAF829120DBE000C4424 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AF2FEB78291060100060BB91 /* FreeFinderTests */ = {
 			isa = PBXGroup;
 			children = (
+				7365FAD82911FD86000C4424 /* CreateItemViewTests.swift */,
+				7365FADB2911FDD6000C4424 /* ItemTests.swift */,
+				7365FADC2911FDD6000C4424 /* ListViewTests.swift */,
+				7365FADA2911FDD5000C4424 /* MapViewTests.swift */,
 				AF2FEB79291060100060BB91 /* FreeFinderTests.swift */,
+				7365FAEA2912039D000C4424 /* ProfileViewTests.swift */,
 			);
 			path = FreeFinderTests;
 			sourceTree = "<group>";
@@ -152,7 +185,7 @@
 		AFE496BF29105E67000A7A95 = {
 			isa = PBXGroup;
 			children = (
-				AF2FEB8029106F580060BB91 /* GoogleService-Info.plist */,
+				7365FAF929120ED3000C4424 /* GoogleService-Info.plist */,
 				AFE496C429105E68000A7A95 /* Shared */,
 				AFE496D329105E68000A7A95 /* macOS */,
 				AFE496DC29105E68000A7A95 /* Tests iOS */,
@@ -160,6 +193,7 @@
 				AF2FEB78291060100060BB91 /* FreeFinderTests */,
 				4859A0D02911DBE900C2D1DB /* Tests GoogleAuth */,
 				AFE496CD29105E68000A7A95 /* Products */,
+				7365FAF829120DBE000C4424 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +202,11 @@
 			children = (
 				AFE496C529105E68000A7A95 /* FreeFinderApp.swift */,
 				AFE496C629105E68000A7A95 /* ContentView.swift */,
+				7365FAE6291202A1000C4424 /* CreateItemView.swift */,
+				7365FAE02911FE51000C4424 /* MapView.swift */,
+				7365FAE22911FEB8000C4424 /* ListView.swift */,
+				7365FAE42911FED2000C4424 /* ItemView.swift */,
+				7365FAE829120374000C4424 /* ProfileView.swift */,
 				AFE496C729105E68000A7A95 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -394,6 +433,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7365FAFF29120ED3000C4424 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,7 +441,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF2FEB8529106F580060BB91 /* GoogleService-Info.plist in Resources */,
+				7365FAFE29120ED3000C4424 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFE496F129105E68000A7A95 /* Assets.xcassets in Resources */,
-				AF2FEB8129106F580060BB91 /* GoogleService-Info.plist in Resources */,
+				7365FAFA29120ED3000C4424 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFE496F229105E68000A7A95 /* Assets.xcassets in Resources */,
-				AF2FEB8229106F580060BB91 /* GoogleService-Info.plist in Resources */,
+				7365FAFB29120ED3000C4424 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +467,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF2FEB8329106F580060BB91 /* GoogleService-Info.plist in Resources */,
+				7365FAFC29120ED3000C4424 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +475,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF2FEB8429106F580060BB91 /* GoogleService-Info.plist in Resources */,
+				7365FAFD29120ED3000C4424 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +494,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7365FADE2911FDD6000C4424 /* ItemTests.swift in Sources */,
+				7365FAEB2912039D000C4424 /* ProfileViewTests.swift in Sources */,
+				7365FAE12911FE51000C4424 /* MapView.swift in Sources */,
+				7365FAE929120374000C4424 /* ProfileView.swift in Sources */,
+				7365FADD2911FDD6000C4424 /* MapViewTests.swift in Sources */,
+				7365FAE52911FED2000C4424 /* ItemView.swift in Sources */,
+				7365FAE32911FEB8000C4424 /* ListView.swift in Sources */,
+				7365FAE7291202A1000C4424 /* CreateItemView.swift in Sources */,
+				7365FADF2911FDD6000C4424 /* ListViewTests.swift in Sources */,
 				AF2FEB7A291060100060BB91 /* FreeFinderTests.swift in Sources */,
+				7365FAD92911FD86000C4424 /* CreateItemViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
