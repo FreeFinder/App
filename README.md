@@ -7,4 +7,4 @@ Note to build the file, you must have [this file](https://drive.google.com/file/
 
 
 ### Test Files
-Test files and functions for our major iteration one use cases and UI can be found under the FreeFinderTests and Tests GoogleAuth folders. We cover sign_in, create_item, refresh_map/list, item_to_annotation, delete_item, and comment use cases in addition to our UI unit testing.  
+Test files and functions for our major iteration one use cases and UI can be found under the FreeFinderTests, Test MaptKit, and Tests GoogleAuth folders. We cover sign_in, create_item, refresh_map/list, item_to_annotation, delete_item, and comment use cases in addition to our UI unit testing.  
